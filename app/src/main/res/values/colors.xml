@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTouchDown">#B71C1C</color>
+    <color name="colorFieldGoal">#E44336</color>
+    <color name="colorSafely">#E57373</color>
+    <color name="colorReset">#FF3D00</color>
+</resources>

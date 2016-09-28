@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.scorecounter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team_A"
+                style="@style/Text"
+                android:text="@string/team_A"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/team_A_score"
+                style="@style/Text"
+                android:layout_marginTop="10dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="60sp"
+                android:textStyle="bold" />
+
+            <Button
+                style="@style/Button"
+                android:layout_marginEnd="10dp"
+                android:background="@color/colorSafely"
+                android:onClick="safelyTeamA"
+                android:text="@string/safely" />
+
+            <Button
+                style="@style/Button"
+                android:layout_marginEnd="10dp"
+                android:background="@color/colorFieldGoal"
+                android:onClick="fieldGoalTeamA"
+                android:text="@string/field_goal" />
+
+            <Button
+                style="@style/Button"
+                android:layout_marginEnd="10dp"
+                android:background="@color/colorTouchDown"
+                android:onClick="touchDownTeamA"
+                android:text="@string/touch_down" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_bright">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team_B"
+                style="@style/Text"
+                android:text="@string/team_B"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/team_B_score"
+                style="@style/Text"
+                android:layout_marginTop="10dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="60sp"
+                android:textStyle="bold" />
+
+            <Button
+                style="@style/Button"
+                android:layout_marginStart="10dp"
+                android:background="@color/colorSafely"
+                android:onClick="safelyTeamB"
+                android:text="@string/safely" />
+
+            <Button
+                style="@style/Button"
+                android:layout_marginStart="10dp"
+                android:background="@color/colorFieldGoal"
+                android:onClick="fieldGoalTeamB"
+                android:text="@string/field_goal" />
+
+            <Button
+                style="@style/Button"
+                android:layout_marginStart="10dp"
+                android:background="@color/colorTouchDown"
+                android:onClick="touchDownTeamB"
+                android:text="@string/touch_down" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:background="@color/colorReset"
+        android:onClick="reset"
+        android:padding="10dp"
+        android:text="@string/reset"
+        android:textSize="30sp" />
+</RelativeLayout>
